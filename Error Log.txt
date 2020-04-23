@@ -1,0 +1,35 @@
+JUnit Assignment Error Log
+
+Circle1
+1.	moveby(double, double) failed moveToNeg()
+	moveby in Circle.java edited
+		center.y = center.y + xOffset;
+			replaced xOffset with yOffset
+
+2.	scale(double) failed both scaleTestDouble() and scaleTestHalf()
+	scale in Circle.java edited
+		radius = radius + factor;
+			replaced + with *
+
+3. 	scale(double) failed scaleTestNegArg()
+	scale in Circle.java edited
+		radius = radius * factor;
+			replaced entire line with
+				if( factor > 0 ) radius = radius * factor;
+
+4. 	intersects(Circle) failed intersectQ1Test()
+	intersects in Circle1.java edited
+		entire method replaced
+		
+
+Circle2
+1.	moveby(double, double) failed moveToNeg()
+	constructor in Circle2.java edited
+		super(y,x,radius);
+			replaced with
+				super(x,y,radius);
+				
+2. 	intersects(Circle) failed intersectQ1Test()
+	intersects in Circle2.java edited
+		entire method replaced with same from Circle1.java
+		
